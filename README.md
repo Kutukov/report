@@ -12,6 +12,21 @@
 - cd корневая папка проекта
 - python main.py --files files/employees1.csv --report performance  
 ---
-- test.py - файл с тестами 
-- main.py - главный файл 
+## структура проекта
+```text
+project/
+│
+├── reports/
+│   ├── base.py            # базовый класс отчётов
+│   ├── performance.py     # отчёт performance
+│   └── registry.py        # регистрация отчётов
+│
+├── reader/
+│   └── csv_reader.py      # чтение CSV
+│
+├── cli.py                 # обработка аргументов
+├── main.py                # точка входа
+│
+└── tests/                 # pytest-тесты
+```
 
